@@ -56,7 +56,7 @@ export async function obchod() {
   if (await otazka(txt)) {
     if (s.predmety["Peníze"] >= 30) {
       s.predmety["Peníze"] -= 30;
-      s.predmety["srandovní fazolky"] += 1;
+      s.predmety["Srandovní fazolky"] += 1;
       await zprava("Jednou mi budeš za to poděkuješ, věř mi...");
     } else {
       await zprava("Tak hele, výroba je drahá, a žádné výjmky neexistují! Vrať se sem až budeš mít něco v peněžence 🤬");

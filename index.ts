@@ -133,7 +133,7 @@ async function pribehHrdiny() {
           s.hrac.hp += 30
           txt = "Narazil jsi na poušť, šel jsi dál a narazil na oázu. Tam ti opravili brnění a vyléčili tě, nyní máš " + s.hrac.hp + " HP.";
         }
-        else if(s.hrac.hp < 150){
+        else if(s.hrac.hp < 150, s.predmety.Brnění){
           s.hrac.hp += 30
           txt = "Narazil jsi na poušť, šel jsi dál a narazil na oázu. Tam tě vyléčili, nyní máš " + s.hrac.hp + " HP.";
         }

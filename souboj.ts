@@ -77,8 +77,15 @@ export async function soubojSNahodnouPotvorou() {
         await zprava("Bubli bubli! Nyní máš " + s.hrac.hp + " HP!");
       }
     }
+      if(s.predmety.Meč > 0){
 
-    let kop = await otazka("Co uděláš?", "🦶 Kopnu ho", "🤜️ Praštím ho");
+    let kop = await otazka("Co uděláš?","🦶 Kopnu ho", "⚔️ Seknu ho" );
+      }
+
+    let kop = await otazka ("Co uděláš?", "🦶 Kopnu ho", "🤜 Praštím ho");
+  
+    
+
 
     txt = potv.jmeno + " má " + hpPotvory + " HP.";
 

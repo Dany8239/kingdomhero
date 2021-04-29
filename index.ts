@@ -60,7 +60,7 @@ async function pribehHrdiny() {
 
     switch (misto) {
       case "Dům":
-        if(s.hrac.hp < 100){
+        if(s.hrac.hp < 100, s.predmety.Brnění = 0){
           s.hrac.hp = Math.max(s.hrac.hp, 100);
           txt += "Narazil jsi na dům a vpadl jsi dovnitř. Byla tam milá stařenka a ta ti dala najíst a dovolila ti tam přespat. Tvoje HP je obnoveno, nyní máš 100 HP." 
         }

@@ -7,7 +7,7 @@ export let potvory = [
   { jmeno: "Pavouk", hp: 10, dmg: 10 },
   { jmeno: "Jedovatý pavouk", hp: 10, dmg: 50 },
   { jmeno: "Skřet", hp: 120, dmg: 30 },
-  {jmeno: "Nerudný stařík", hp: 600, dmg: 5}
+  {jmeno: "Nerudný stařík", hp: 600, dmg: 10}
 ];
 
 export async function soubojSNahodnouPotvorou() {

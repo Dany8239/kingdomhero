@@ -138,9 +138,10 @@ async function pribehHrdiny() {
           txt = "Narazil jsi na poušť, šel jsi dál a narazil na oázu. Tam tě vyléčili, nyní máš " + s.hrac.hp + " HP.";
         }
 
-        else
+        else {
           s.hrac.hp -= 50
           txt = "Narazil jsi na poušť, a v bláznivé naději že najdeš oázu jsi šel dál. Bohužel, žádnou oázu jsi nenašel a přišel jsi o 50 HP, máš už jen " + s.hrac.hp + " HP."
+        }
       break;      
         
 

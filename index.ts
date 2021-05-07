@@ -49,7 +49,7 @@ async function pribehHrdiny() {
 
   generujPrazdnouMapu();
 
-  await zprava("Hurá! ⚔️ Jdeme na to!", "Pokračovat");
+
 
   while (true) {
     let misto = s.mapa[s.hrac.y][s.hrac.x];

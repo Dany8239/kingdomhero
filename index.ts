@@ -116,7 +116,7 @@ async function pribehHrdiny() {
             "Dorazil jsi na hrad, a tam ti místní nabídli, že si můžeš uložit svou hru, přijmeš tuto laskavou nabídku?"
           )
         ) {
-          let nazevhry = await dotaz("Jak chceš aby se ulažená hra jmenovala?cPokud chceš přepsat nějakou uloženou hru, napiš její jméno");
+          let nazevhry = await dotaz("Jak chceš aby se ulažená hra jmenovala? Pokud chceš přepsat nějakou uloženou hru, napiš její jméno");
           ulozit(nazevhry);
         }
         break;

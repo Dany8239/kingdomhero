@@ -20,6 +20,7 @@ rstrt.addEventListener("click", () => {
 
 function start() {
   strt.style.display = "none";
+  rstrt.style.display = "none"
   pribehHrdiny().then(
     () => {},
     ({ message }) => {
@@ -129,11 +130,11 @@ async function pribehHrdiny() {
       break;
 
       case "Poušť":
-        if(s.predmety.Brnění > 0 && s.hrac.hp < 200){
+        if(Math.random() > 0.5 && s.predmety.Brnění > 0 ){
           s.hrac.hp += 30
           txt = "Narazil jsi na poušť, šel jsi dál a narazil na oázu. Tam ti opravili brnění a vyléčili tě, nyní máš " + s.hrac.hp + " HP.";
         }
-        else if(s.hrac.hp < 150 && s.predmety.Brnění == 0){
+        else if(Math.random() > 0.5  && s.predmety.Brnění == 0){
           s.hrac.hp += 30
           txt = "Narazil jsi na poušť, šel jsi dál a narazil na oázu. Tam tě vyléčili, nyní máš " + s.hrac.hp + " HP.";
         }
@@ -155,7 +156,7 @@ async function pribehHrdiny() {
     if (s.hrac.hp <= 0) {
       tl1.style.display = "none";
       zprava(" Zemřel jsi 😭️ ☠️");
-      tl1.textContent = "Klikni na restart "
+      rstrt.style.display = ""
       return;
     }
 

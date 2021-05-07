@@ -1,10 +1,10 @@
 let input = document.querySelector<HTMLInputElement>("#input")
 let input2 = document.querySelector<HTMLInputElement>("#input");
 let textik = document.querySelector<HTMLElement>("#textik");
-let tl1 = document.querySelector<HTMLElement>("#tl1");
-let tl2 = document.querySelector<HTMLElement>("#tl2");
-let tl3 = document.querySelector<HTMLElement>("#tl3");
-let tl4 = document.querySelector<HTMLElement>("#tl4");
+export let tl1 = document.querySelector<HTMLElement>("#tl1");
+export let tl2 = document.querySelector<HTMLElement>("#tl2");
+export let tl3 = document.querySelector<HTMLElement>("#tl3");
+export let tl4 = document.querySelector<HTMLElement>("#tl4");
 
 tl1.style.display = "none";
 tl2.style.display = "none";

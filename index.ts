@@ -1,4 +1,4 @@
-import { kompas, otazka, zprava, dotaz } from "./ui";
+import { kompas, otazka, zprava, dotaz, tl1, tl2, tl3, tl4 } from "./ui";
 import { state as s, nazvyUlozenychHer, nahrat, ulozit } from "./state";
 import { obchod } from "./obchod";
 import { soubojSNahodnouPotvorou } from "./souboj";
@@ -50,7 +50,7 @@ async function pribehHrdiny() {
 
   generujPrazdnouMapu();
 
-
+  await zprava("Právě jsem zkopal Batmana, tak jsem mu řekl, myslel jsem že budeš lepší Batmane, ale ukázalo se, že je to jeptiška.")
 
   while (true) {
     let misto = s.mapa[s.hrac.y][s.hrac.x];

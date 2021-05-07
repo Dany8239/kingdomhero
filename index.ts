@@ -155,6 +155,9 @@ async function pribehHrdiny() {
 
     if (s.hrac.hp <= 0) {
       tl1.style.display = "none";
+      tl2.style.display = "none";
+      tl3.style.display = "none";
+      tl4.style.display = "none";
       zprava(" Zemřel jsi 😭️ ☠️");
       rstrt.style.display = ""
       return;

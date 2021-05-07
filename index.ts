@@ -155,6 +155,7 @@ async function pribehHrdiny() {
     if (s.hrac.hp <= 0) {
       tl1.style.display = "none";
       zprava(" Zemřel jsi 😭️ ☠️");
+      tl1.textContent = "Klikni na restart "
       return;
     }
 

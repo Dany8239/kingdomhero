@@ -50,7 +50,7 @@ async function pribehHrdiny() {
 
   generujPrazdnouMapu();
 
-  await zprava("Právě jsem zkopal Batmana, tak jsem mu řekl, myslel jsem že budeš lepší Batmane, ale ukázalo se, že je to jeptiška.")
+
 
   while (true) {
     let misto = s.mapa[s.hrac.y][s.hrac.x];
